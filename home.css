@@ -79,6 +79,14 @@ width:100%
 
 }
 
+.text{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  justify-content: center;
+  margin-top: 400px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
 
   
   
