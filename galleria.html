@@ -1,23 +1,41 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="galleria.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="italo.css"/>
   <title>Centenario di Italo Calvino 1923-2023</title>
 </head>
 <body>
   <header class="header"> 
-  <a href="home.html" class="logo">Italo Calvino</a>
-  <nav class="navbar">
+    <a href="home.html" class="logo">Italo Calvino</a>
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="galleria.html">Galleria</a>
+      <a href="https://it.m.wikipedia.org/wiki/Italo_Calvino">Wikipedia</a>
+      <a href="opere.html">Opere</a>
+    </nav>
+  </header>
 
-  <a href="home.html">Home</a>
-  <a href="galleria.html">Galleria</a>
-<a href="https://it.m.wikipedia.org/wiki/Italo_Calvino">Wikipedia</a>
-<a href="opere.html">Opere</a>
-  </nav>
-  </header> 
-</div>
+  <!-- Aggiungi la sezione della galleria -->
+  <div class="gallery-container">
+    <div class="simpleSlides">
+      <div><img src="ital.jpeg" alt="Image 1"></div>
+      <div><img src="photoital.webp" alt="Image 2"></div>
+      <div><img src="calvv (1).jpg" alt="Image 3"></div>
+      <!-- Aggiungi altre immagini secondo necessità -->
+    </div>
+
+    <!-- Freccia per navigare all'indietro -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <!-- Freccia per navigare avanti -->
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+
+  <script type="text/javascript" src="italo.js"></script>
+</body>
+</html>
 
 
 
