@@ -28,6 +28,8 @@
     align-items:center;
     z-index:100;
     backdrop-filter: blur(16px);
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
 }
 
 .logo{
