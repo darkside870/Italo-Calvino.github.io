@@ -28,6 +28,8 @@
     align-items:center;
     z-index:100;
     transition: top 0.5s ease-in-out;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
 
 }
 
