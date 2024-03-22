@@ -142,3 +142,14 @@ width:100%
   .simpleSlides div:first-child {
     display: block; /* Show the first image by default */
   }
+/* Aggiungi animazione di transizione alla navbar e all'header */
+.navbar,
+.header {
+  transition: top 0.3s ease-in-out;
+}
+
+/* Nascondi la navbar e l'header quando hanno la classe 'hidden' */
+.navbar.hidden,
+.header.hidden {
+  top: -22px; /* o qualsiasi valore desiderato per nascondere l'elemento */
+}
