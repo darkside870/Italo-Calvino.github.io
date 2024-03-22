@@ -151,5 +151,5 @@ width:100%
 /* Nascondi la navbar e l'header quando hanno la classe 'hidden' */
 .navbar.hidden,
 .header.hidden {
-  top: -22px; /* o qualsiasi valore desiderato per nascondere l'elemento */
+  top: -100px; /* o qualsiasi valore desiderato per nascondere l'elemento */
 }
