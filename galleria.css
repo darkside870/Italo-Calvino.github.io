@@ -15,6 +15,7 @@
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment:fixed;  
+    
   }
   
   .header{
@@ -30,7 +31,7 @@
     transition: top 0.5s ease-in-out;
     font-family: "Sofia", sans-serif;
     text-shadow: 3px 3px 3px #ababab;
-
+    margin-top: 25px;
 }
 
 .logo{
