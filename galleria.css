@@ -152,4 +152,5 @@ width:100%
 .navbar.hidden,
 .header.hidden {
   top: -100px; /* o qualsiasi valore desiderato per nascondere l'elemento */
+  display:none;
 }
