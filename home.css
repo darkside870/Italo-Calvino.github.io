@@ -39,15 +39,6 @@
     font-weight:700;
 }
 
-.main-menu a {
-    position:relative;
-    font-size:18px;
-    color: #fff;
-    font-weight:500;
-    text-decoration:none;
-    margin-left:40px;
-}
-
 .titolo{
     font-size:40px;
     color:#fff;
@@ -64,22 +55,6 @@
     margin-left:51% ;   
     position:absolute;
     bottom:65%;    
-}
-
-.main-menu a::before{
-  content:"";
-  position:absolute;
-  top: 100%;
-  left:0;
-  width:0;
-  height: 2px;
-  background:#fff;
-  transition: .5s;
-}
-.main-menu a:hover::before{
- 
-width:100%
-
 }
 
 .text{
@@ -126,6 +101,12 @@ width:100%
   color: #B9FAF8;
   font-size: 1.5rem;
   text-decoration: none;
+  position:relative;
+    font-size:18px;
+    color: #fff;
+    font-weight:500;
+    text-decoration:none;
+    margin-left:40px;
 }
 
 #main-menu a:hover {
