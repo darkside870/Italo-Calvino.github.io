@@ -39,7 +39,7 @@
     font-weight:700;
 }
 
-.navbar a {
+.main-menu a {
     position:relative;
     font-size:18px;
     color: #fff;
@@ -66,7 +66,7 @@
     bottom:65%;    
 }
 
-.navbar a::before{
+.main-menu a::before{
   content:"";
   position:absolute;
   top: 100%;
@@ -76,7 +76,7 @@
   background:#fff;
   transition: .5s;
 }
-.navbar a:hover::before{
+.main-menu a:hover::before{
  
 width:100%
 
