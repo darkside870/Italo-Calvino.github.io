@@ -1,95 +1,57 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Aggiungi questo CSS al tuo file home.css */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
-
-body {
-  padding: 0px;
-  margin: 0px;
-  font-size: 20px;
-  min-height: 200vh;
-  font-family: 'Cabin', Sans-serif;
-  background:url(calvv\ \(1\).jpg);
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment:fixed;  
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.4s;
 }
 
-.header{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  padding:20px 100px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  z-index:100;
-  backdrop-filter: blur(16px);
-  font-family: "Sofia", sans-serif;
-  text-shadow: 3px 3px 3px #ababab;
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    padding: 20px;
+    z-index: 99;
+  }
+
+  .navbar a {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+
+  .navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }
-
-.logo{
-  font-size:32px;
-  color: #fff;
-  text-decoration:none;
-  font-weight:700;
-}
-
-.navbar a {
-  position:relative;
-  font-size:18px;
-  color: #fff;
-  font-weight:500;
-  text-decoration:none;
-  margin-left:40px;
-}
-
-.titolo{
-  font-size:40px;
-  color:#fff;
-  font-weight:900;
-  margin-left:42% ;   
-  position:absolute;
-  bottom:70%;    
-}
-
-.data{
-  font-size:25px;
-  color:#fff;
-  font-weight:900;
-  margin-left:51% ;   
-  position:absolute;
-  bottom:65%;    
-}
-
-.navbar a::before{
-content:"";
-position:absolute;
-top: 100%;
-left:0;
-width:0;
-height: 2px;
-background:#fff;
-transition: .5s;
-}
-.navbar a:hover::before{
-
-width:100%
-
-}
-
-.text{
-color: rgb(255, 255, 255);
-text-align: center;
-justify-content: center;
-margin-top: 400px;
-margin-left: 15px;
-margin-right: 15px;
-backdrop-filter: blur(8px);
-}
-
-
