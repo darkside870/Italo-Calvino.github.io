@@ -95,6 +95,9 @@ backdrop-filter: blur(8px);
 
 
 
+/* Aggiungi questo CSS al tuo file home.css */
+
+/* Hamburger menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -109,17 +112,19 @@ backdrop-filter: blur(8px);
   transition: 0.4s;
 }
 
-@media screen and (max-width: 690px) {
+/* Menu a comparsa */
+@media screen and (max-width: 768px) {
   .navbar {
     display: none;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    width: 100%;
+    width: 200px; /* Larghezza del menu a comparsa */
     top: 80px;
     left: 0;
     padding: 20px;
     z-index: 99;
+    transition: 0.3s; /* Animazione per una comparsa più fluida */
   }
 
   .navbar a {
@@ -136,6 +141,9 @@ backdrop-filter: blur(8px);
 
   .hamburger {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px; /* Spazio tra hamburger e contenuto */
   }
 
   .change .bar:nth-child(1) {
@@ -149,4 +157,10 @@ backdrop-filter: blur(8px);
   .change .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
   }
+
+  /* Mostra il menu a comparsa quando la classe "change" è applicata */
+  .navbar.change {
+    display: flex;
+  }
 }
+
