@@ -109,7 +109,7 @@ backdrop-filter: blur(8px);
   transition: 0.4s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 690px) {
   .navbar {
     display: none;
     flex-direction: column;
